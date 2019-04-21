@@ -79,7 +79,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- Database End -->
+        <!-- Database End-->
+        <dependency>
+            <groupId>com.juck</groupId>
+            <artifactId>mytoken-common-domain</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

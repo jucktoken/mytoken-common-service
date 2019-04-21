@@ -25,21 +25,25 @@
         </jdbcConnection>
 
         <!-- 配置实体类存放路径 -->
-        <javaModelGenerator targetPackage="com.juck.mytoken.service.admin.domain" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.juck.mytoken.common.domain" targetProject="src/main/java"/>
 
         <!-- 配置 XML 存放路径 -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
         <!-- 配置 DAO 存放路径 -->
         <javaClientGenerator
-                targetPackage="com.juck.mytoken.service.admin.mapper"
+                targetPackage="com.juck.mytoken.common.mapper"
                 targetProject="src/main/java"
                 type="XMLMAPPER"/>
 
         <!-- 配置需要生成的表，% 代表所有 -->
-        <table tableName="tb_sys_user">
+        <table catalog="itoken-service-admin" tableName="tb_sys_user">
             <!-- mysql 配置 -->
             <generatedKey column="user_code" sqlStatement="Mysql" identity="false"/>
+        </table>
+        <table catalog="itoken-service-posts" tableName="tb_posts_post">
+            <!-- mysql 配置 -->
+            <generatedKey column="post_guid" sqlStatement="Mysql" identity="false"/>
         </table>
     </context>
 </generatorConfiguration>
