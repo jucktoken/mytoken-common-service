@@ -41,7 +41,7 @@
             <!-- mysql 配置 -->
             <generatedKey column="user_code" sqlStatement="Mysql" identity="false"/>
         </table>
-        <table catalog="itoken-service-posts" tableName="tb_posts_post">
+        <table catalog="itoken-service-admin" tableName="tb_posts_post">
             <!-- mysql 配置 -->
             <generatedKey column="post_guid" sqlStatement="Mysql" identity="false"/>
         </table>
