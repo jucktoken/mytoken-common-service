@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Service
 @Transactional(readOnly =true)
-public class BaseServiceImpl<T extends BaseDto,D extends MyMapper<T>> implements BaseService<T> {
+public abstract class BaseServiceImpl<T extends BaseDto,D extends MyMapper<T>> implements BaseService<T> {
 
    @Autowired
    public D dao;
