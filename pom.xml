@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.juck</groupId>
             <artifactId>mytoken-common-domain</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -96,6 +96,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>3.4.4</version>
         </dependency>
     </dependencies>
     <build>
